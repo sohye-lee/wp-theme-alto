@@ -1,0 +1,21 @@
+/*
+Theme Name: Plumo
+Theme URI: https://pristine.digital/plumo
+Author: Pristine Digital, LLC
+Author URI: https://pristine.digital
+Description:  Plumo is a modern and easy-to-use WordPress theme, designed specifically for small business owners. With its clean, trendy design and user-friendly customization options, Plumo allows businesses to build beautiful, responsive websites effortlessly. Whether you're starting from scratch or revamping your site, Plumo provides a flexible foundation to showcase your brand in a fresh, dynamic way.
+Version: 1.0
+Requires at least: 6.4
+Tested up to: 6.6
+Requires PHP: 7.0
+Version: 1.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: plumo
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns
+*/
+
+body {
+    background-color: #eee;
+    font-family: "Space Grotesk", sans-serif;
+}
