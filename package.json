@@ -1,0 +1,25 @@
+{
+  "name": "plumo",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=16.13.0",
+    "pnpm": ">=8.6.12"
+  },
+  "scripts": {
+    "sass-css": "",
+    "gulp": "gulp",
+    "watch": "gulp"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.65.1"
+  },
+  "dependencies": {
+    "swiper": "^11.0.3"
+  }
+}

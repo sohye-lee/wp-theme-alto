@@ -2,6 +2,7 @@
 
 function plumo_load_scripts() {
     wp_enqueue_style( 'plumo-style', get_stylesheet_uri(), array(), filemtime( get_template_directory() . '/style.css'), 'all' );
+    wp_enqueue_style( 'plumo-style-scss', get_site_url() . '/wp-content/themes/plumo/assets/css/theme.css', array(), filemtime( get_template_directory() . '/assets/css/theme.css'), 'all' );
     wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap', array(), null );
 }
 

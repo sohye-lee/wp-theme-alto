@@ -5,7 +5,7 @@
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
             <section class="hero">
-                HERO
+                <h1>HERO!</h1>
             </section>
             <section class="services">
                 SERVICES
