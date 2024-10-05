@@ -1,1 +1,1 @@
-# wp-theme-plumo
+# wp-theme-alto
