@@ -17,5 +17,9 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 
 body {
     background-color: #eee;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: "Lato", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Barlow Condensed', sans-serif;
 }

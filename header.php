@@ -12,18 +12,17 @@
     <div id="page" class="site">
         <!-- HEADER -->
         <header>
-            <section class="top-bar">
-                <div class="logo">
-                    LOGO
-                </div>
-                <div class="searchbox">
-                    SEARCH
-                </div>
-            </section>
             <section class="menu-area">
+                <div class="logo">
+                    ALTO*
+                </div>
                 <nav class="main-menu">
-                    MENU
+                    <?php wp_nav_menu(array( 'theme_location' => 'alto_main_menu', 'depth' => 2 )); ?>
                 </nav>
+                <div class="toggle-btn">
+                    <div class="toggle-bar"></div>
+                    <div class="toggle-bar"></div>
+                </div>
             </section>
         </header>
         <!-- HEADER ENDS -->

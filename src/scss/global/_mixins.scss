@@ -1,0 +1,9 @@
+@mixin row {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+    @media(max-width: $bp-tablet-max) {
+        flex-direction: column;
+    }
+}

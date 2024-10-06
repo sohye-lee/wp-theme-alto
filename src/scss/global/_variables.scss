@@ -1,0 +1,38 @@
+// COLORS
+$color-white: #fff;
+$color-black: #000;
+$color-gray-100: #F5F5F5;
+$color-gray-200: #DCDCDC;
+$color-gray-300: #909090;
+$color-gray-400: #8F8F8F;
+$color-gray-500: #282828;
+$color-accent: #00F7CE;
+$color-accent-dark: #30B29C;
+$color-warning: #FD1745;
+$color-text: #909090;
+$color-heading: #000;
+
+// TYPO
+$font-heading: 'Barlow Condensed', sans-serif;
+$font-text: 'Lato', sans-serif;
+$fs-hero: clamp(46px, 6vw, 80px);
+$fs-h1: clamp(46px, 5vw, 70px);
+$fs-h2: clamp(38px, 4vw, 55px);
+$fs-h3: clamp(28px, 3.5vw, 35px);
+$fs-h4: clamp(26px, 3vw, 29px);
+$fs-h5: 21px;
+$fs-h6: 19px;
+$fs-button: 18px;
+$fs-body: 16px;
+$fs-body-sm: 15px;
+
+// LAYOUT 
+$container-max: 1200px;
+$bp-mobile-max: 574px;
+$bp-tablet-max: 768px;
+$bp-tablet-lg-max: 1024px;
+$bp-desktop-sm-max: 1240px;
+$bp-desktop-md-max: 1440px;
+$bp-desktop-lg-min: 1441px;
+$padding-mobile: 20px;
+$padding-desktop: 40px;
