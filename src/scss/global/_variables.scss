@@ -14,7 +14,7 @@ $color-heading: #000;
 
 // TYPO
 $font-heading: 'Barlow Condensed', sans-serif;
-$font-text: 'Lato', sans-serif;
+$font-text: 'Inter', sans-serif;
 $fs-hero: clamp(46px, 6vw, 80px);
 $fs-h1: clamp(46px, 5vw, 70px);
 $fs-h2: clamp(38px, 4vw, 55px);
@@ -36,3 +36,6 @@ $bp-desktop-md-max: 1440px;
 $bp-desktop-lg-min: 1441px;
 $padding-mobile: 20px;
 $padding-desktop: 40px;
+$header-height-desktop: 90px;
+$header-height-mobile: 70px;
+ 

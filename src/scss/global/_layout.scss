@@ -1,0 +1,17 @@
+@import './variables';
+@import './mixins';
+
+.container {
+    max-width: $container-max;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px $padding-desktop;
+
+    @media (max-width: $bp-mobile-max) {
+        padding: 40px $padding-mobile;
+    }
+}
+
+.row {
+    @include row();
+}

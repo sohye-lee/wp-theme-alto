@@ -1,6 +1,11 @@
         <!-- FOOTER -->
         <footer class="site-footer">
-            FOOTER
+            <section class="footer">
+                <div class="container row">
+                    FOOTER
+                </div>
+            </section>
+            <section class="bottom-bar"></section>
         </footer>
         <!-- FOOTER ENDS -->
         </div>

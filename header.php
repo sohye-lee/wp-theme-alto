@@ -13,9 +13,9 @@
         <!-- HEADER -->
         <header>
             <section class="menu-area">
-                <div class="logo">
-                    ALTO*
-                </div>
+                <a class="logo" href="/">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-black.svg" alt="logo">
+                </a>
                 <nav class="main-menu">
                     <?php wp_nav_menu(array( 'theme_location' => 'alto_main_menu', 'depth' => 2 )); ?>
                 </nav>
@@ -23,6 +23,14 @@
                     <div class="toggle-bar"></div>
                     <div class="toggle-bar"></div>
                 </div>
+                <nav class="slide-nav">
+                    <?php wp_nav_menu(array( 'theme_location' => 'alto_mobile_menu', 'depth' => 2 )); ?>
+                    <ul class="social-links">
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">Instagram</a></li>
+                    </ul>
+                </nav>
             </section>
         </header>
         <!-- HEADER ENDS -->

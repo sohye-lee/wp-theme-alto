@@ -1,0 +1,69 @@
+@import "./variables";
+@import "./mixins";
+
+.hero {
+    font-size: $fs-hero;
+}
+
+h1 {
+    font-size: $fs-h1;
+}
+
+h2 {
+    font-size: $fs-h2;
+}
+
+h3 {
+    font-size: $fs-h3;
+}
+
+h4 {
+    font-size: $fs-h4;
+}
+
+h5 {
+    font-size: $fs-h5;
+}
+
+h6 {
+    font-size: $fs-h6;
+}
+
+a {
+    text-decoration: none;
+    color: $color-accent;
+    &:hover {
+        color: $color-accent-dark;
+    }
+}
+
+
+
+header nav li a, 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-heading;
+    color: $color-black;
+    font-weight: 600;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 1px;
+}
+
+p, a, span {
+    font-size: $fs-body;
+    color: $color-text;
+    font-weight: inherit;
+}

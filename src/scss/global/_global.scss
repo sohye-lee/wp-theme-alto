@@ -1,29 +1,19 @@
 @import './variables';
 @import './mixins';
+@import './layout';
 
 
 * {
     box-sizing: border-box;
     padding: 0; 
     margin: 0;
-}
+} 
 
 body {
     padding: 0;
     font-family: $font-text;
-    background-color: $color-gray-100;
+    background-color: $color-white;
     font-size: $fs-body;
     color: $color-text;
-}
-
-header nav li a, 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: $font-heading;
-    color: $color-black;
-    font-weight: 600;
+    line-height: 1.5;
 }
