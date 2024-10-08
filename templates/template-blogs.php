@@ -1,16 +1,13 @@
-<?php get_header();?>
+<?php 
+/*
+Template Name: Blogs Template
+*/
+?>
 
-<!-- CONTENT -->
 <div id="content" class="site-content">
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
-            <section class="hero">
-                <h1>HERO!</h1>
-            </section>
-            <section class="services">
-                <!-- SERVICES -->
-            </section>
-            <sections class="home-blog">
+            <sections class="page-blog">
                 <div class="container">
                     <div class="blog-grid">
                         <?php 
@@ -42,6 +39,3 @@
         </main>
     </div>
 </div>
-<!-- CONTENT ENDS -->
-
-<?php get_footer(); ?>

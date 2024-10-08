@@ -67,3 +67,20 @@ p, a, span {
     color: $color-text;
     font-weight: inherit;
 }
+
+.hover-title {
+    display: inline;
+    position: relative;
+    background-image: linear-gradient($color-black, $color-black);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    transition: background-size .3s cubic-bezier(.165,.84,.44,1), color .1s;
+    padding-right: 5px;
+    color: $color-black;
+
+    &:hover {
+        background-size: 100% 100%;
+        color: $color-white;
+    }
+}

@@ -1,6 +1,14 @@
 @import './variables';
 @import './mixins';
 
+.site-content {
+    padding-top: $header-height-desktop;
+
+    @media (max-width: $bp-tablet-max) {
+        padding-top: $header-height-mobile;
+    }
+}
+
 .container {
     max-width: $container-max;
     width: 100%;

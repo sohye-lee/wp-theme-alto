@@ -17,3 +17,6 @@ register_nav_menus(
         'alto_mobile_menu' => 'Mobile Menu'
     )
 );
+
+
+add_theme_support( 'post-thumbnails' );

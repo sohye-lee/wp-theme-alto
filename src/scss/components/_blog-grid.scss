@@ -4,5 +4,51 @@
     gap: 24px;
     align-items: stretch;
 
-    
+    .blog-item {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 20px;
+
+        h2, h2 a {
+            font-size: $fs-h4;
+            line-height: 110% !important;
+        }
+        .meta-info {
+            padding-top: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+
+            .categories {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 4px;
+                align-items: stretch;
+                
+                a {
+                    padding: 2px 6px 3px;
+                    background-color: $color-gray-500;
+                    color: $color-white;
+                    font-family: $font-heading;
+                    text-transform: uppercase;
+                    border: 2px solid $color-black;
+                    transition: all 200ms;
+
+                    &:hover {
+                        color: $color-black;
+                        background-color: $color-white;
+                    }
+                }
+            }
+
+            .tags {
+                a {
+                    font-size: $fs-body-sm;
+                    text-decoration: underline;
+                }
+                
+            }
+        }
+    }
 }

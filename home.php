@@ -4,12 +4,6 @@
 <div id="content" class="site-content">
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
-            <section class="hero">
-                <h1>HERO!</h1>
-            </section>
-            <section class="services">
-                <!-- SERVICES -->
-            </section>
             <sections class="home-blog">
                 <div class="container">
                     <div class="blog-grid">
