@@ -1,10 +1,20 @@
-<?php get_header();?>
+<?php 
+    get_header();
+    if (is_home()) {
+
+        $title = get_the_title();
+    }
+?>
 
 <!-- CONTENT -->
+
 <div id="content" class="site-content">
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
-            <sections class="home-blog">
+
+            <?php get_template_part('templates/parts/content', 'page-header'); ?>
+
+            <sections class="page-blog">
                 <div class="container">
                     <div class="blog-grid">
                         <?php 
@@ -13,12 +23,10 @@
                                 ?>
                         <article class="blog-item">
                             <p><?php echo get_the_date(); ?>
-                                <!-- by <?php the_author_posts_link(); ?> -->
                             </p>
                             <h2><a href="<?php the_permalink(); ?>" class="hover-title"><?php the_title(); ?></a></h2>
                             <div class="meta-info">
                                 <p class="categories"><?php the_category( ' ' ); ?></p>
-                                <!-- <p class="tags"><?php the_tags( '', ', ' ); ?></p> -->
                                 <p><?php the_excerpt(); ?></p>
                             </div>
                         </article>
@@ -36,6 +44,7 @@
         </main>
     </div>
 </div>
+
 <!-- CONTENT ENDS -->
 
 <?php get_footer(); ?>
