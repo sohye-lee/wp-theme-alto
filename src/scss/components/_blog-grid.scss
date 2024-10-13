@@ -1,6 +1,6 @@
 .blog-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 48%);
     gap: 24px;
     align-items: stretch;
 
@@ -9,6 +9,11 @@
         flex-direction: column;
         gap: 12px;
         padding: 20px;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
 
         h2, h2 a {
             font-size: $fs-h4;

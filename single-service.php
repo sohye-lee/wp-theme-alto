@@ -19,6 +19,7 @@
                                 while ( have_posts() ): the_post();
                                 ?>
                         <article class="blog-item">
+                            <?php the_post_thumbnail(); ?>
                             <p><?php echo get_the_date(); ?>
                             </p>
                             <h2><a href="<?php the_permalink(); ?>" class="hover-title"><?php the_title(); ?></a></h2>

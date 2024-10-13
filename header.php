@@ -13,9 +13,20 @@
         <!-- HEADER -->
         <header>
             <section class="menu-area">
-                <a class="logo" href="/">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-black.svg" alt="logo">
-                </a>
+                <div class="logo">
+                    <?php 
+                        if ( has_custom_logo() ) {
+                            the_custom_logo(); 
+                        } else {
+                    ?>
+                    <a href="<?php echo home_url('/'); ?>" class="logo-text">
+                        <?php echo bloginfo('name'); ?>
+                    </a>
+                    <?php
+                        }
+                    ?>
+                    <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-black.svg" alt="logo"> -->
+                </div>
                 <nav class="main-menu">
                     <?php wp_nav_menu(array( 'theme_location' => 'alto_main_menu', 'depth' => 2 )); ?>
                 </nav>
