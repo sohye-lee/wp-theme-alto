@@ -1,0 +1,47 @@
+.sidebar {
+    width: 100%;
+    max-width: 300px;
+    background-color: $color-gray-100;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px 24px;
+
+    .widget-wrapper {
+
+        &:not(:first-child) {
+            h4, .widget-title, .wp-block-heading {
+                margin-top: 20px;
+            }
+         }
+        h4, .widget-title, .wp-block-heading {
+            font-size: $fs-h5;
+        }
+        
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+    }
+
+    &.footer-section {
+        padding: 0;
+        background-color: transparent;
+        max-width: 100%;
+ 
+
+         h4, .widget-title, .wp-block-heading, a, span, li, p {
+            color: $color-white;
+         }
+
+         .logo img {
+            max-height: 50px !important;
+            width: auto;
+            max-width: 80%;
+            height: auto;
+            filter: invert(1) grayscale(1) brightness(1);
+         }
+    }
+}

@@ -2,6 +2,16 @@
     .footer {
         width: 100%;
         background-color: $color-black;
+
+        .container {
+            display: flex;
+            // grid-template-columns: 1fr 1fr 1fr;
+            gap: 32px;
+
+            section {
+                flex-grow: 1;
+            }
+        }
     }
 
     .bottom-bar {

@@ -3,6 +3,10 @@
         $page_id = get_option( 'page_for_posts' );
         $title = get_the_title($page_id);
         $bg_img_url = get_the_post_thumbnail_url($page_id);
+    } else if (is_post_type_archive( )) {
+        $page_id = get_option( 'services_archive_page' );
+        $title = get_the_title($page_id);
+        $bg_img_url = get_the_post_thumbnail_url($page_id);
     } else {
         $title = get_the_title();
         $bg_img_url = get_the_post_thumbnail_url();

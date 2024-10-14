@@ -1,6 +1,5 @@
 <?php 
     get_header();
- 
 ?>
 
 <!-- CONTENT -->
@@ -12,7 +11,7 @@
             <?php get_template_part('templates/parts/content', 'page-header'); ?>
 
             <sections class="page-blog">
-                <div class="container">
+                <div class="container has-sidebar">
                     <div class="blog-grid">
                         <?php 
                             if ( have_posts() ):
@@ -36,6 +35,8 @@
                             endif;
                         ?>
                     </div>
+                    <?php get_sidebar();?>
+
                 </div>
             </sections>
         </main>

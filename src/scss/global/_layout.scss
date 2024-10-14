@@ -18,6 +18,12 @@
     @media (max-width: $bp-mobile-max) {
         padding: 40px $padding-mobile;
     }
+
+    &.has-sidebar {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 32px;
+    }
 }
 
 .row {
