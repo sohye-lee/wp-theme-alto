@@ -34,14 +34,25 @@
                     <div class="toggle-bar"></div>
                     <div class="toggle-bar"></div>
                 </div>
-                <nav class="slide-nav">
-                    <?php wp_nav_menu(array( 'theme_location' => 'alto_mobile_menu', 'depth' => 2 )); ?>
+                <div class="slide-nav">
+                    <nav>
+                        <?php wp_nav_menu(array( 'theme_location' => 'alto_mobile_menu', 'depth' => 2 )); ?>
+                    </nav>
+
                     <ul class="social-links">
-                        <li><a href="">Instagram</a></li>
-                        <li><a href="">Instagram</a></li>
-                        <li><a href="">Instagram</a></li>
+                        <?php 
+                            $options =  get_option('site_options') ; 
+                            $names = array_keys(get_option('site_options'));
+                            foreach($options as $key => $value) {
+                                if ($value) {
+                                    $name = str_replace( 'site_options_', "", $key);
+                                    echo '<li><a href="'. $value .'" target="_blank">' . $name . '</a></li>';
+                                }
+                            }
+                        ?>
                     </ul>
-                </nav>
+                    <?php get_search_form(); ?>
+                </div>
             </section>
         </header>
         <!-- HEADER ENDS -->

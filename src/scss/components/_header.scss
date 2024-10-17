@@ -146,9 +146,9 @@ header {
             }
         }
 
-        nav.slide-nav {
+        .slide-nav {
             position: absolute;
-            width: 300px;
+            min-width: 300px;
             top: 100%;
             right: 0;
             background-color: $color-white;
@@ -156,6 +156,9 @@ header {
             padding: 40px 40px 60px;
             transform: translateX(100%);
             transition: all 300ms ease;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
             
             ul {
                 flex-direction: column;
@@ -178,8 +181,8 @@ header {
 
                     display: flex;
                     border-bottom: 1px solid $color-gray-200;
-                    padding-bottom: 40px;
-                    margin-bottom: 40px;
+                    padding-bottom: 24px;
+                    // margin-bottom: 40px;
                 }
             }
 
@@ -187,7 +190,10 @@ header {
                 // padding-top: 20px;
 
                 li a {
-                    font-size: $fs-body;
+                    font-size: $fs-h6;
+                    font-family: $font-heading;
+                    text-transform: uppercase;
+                    font-weight: 600;
                 }
             }
         }

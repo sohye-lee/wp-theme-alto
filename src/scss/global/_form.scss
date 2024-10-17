@@ -1,0 +1,51 @@
+form {
+    input {
+
+        &:not([type=submit]), text-area {
+            border: 2px solid $color-gray-100;
+            outline: none;
+            background-color: $color-gray-100;
+            padding: 8px 14px;
+            height: 42px;
+            display: inline-flex;
+            align-items: center;
+            color: $color-gray-400;
+            
+            &::placeholder {
+                color: $color-gray-300;
+                font-size: $fs-body-sm;
+            }
+        }
+
+        &[type=submit] {
+            height: 42px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 14px;
+            gap: 8px;
+            border: 2px solid $color-black;
+            color: $color-black;
+            font-family: $font-heading;
+            text-transform: uppercase;
+            font-size: $fs-body;
+            background-color: $color-white;
+            font-weight: 500;
+        }
+    }
+
+    &.searchform {
+        
+        > div {
+            display: flex;
+            align-items: stretch;
+            gap: 8px;
+        }
+    }
+}
+
+.slide-nav {
+    .searchform {
+        margin-top: 24px;
+    }
+}

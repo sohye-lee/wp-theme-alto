@@ -1,9 +1,5 @@
 <?php 
     get_header();
-    if (is_home()) {
-
-        $title = get_the_title();
-    }
 ?>
 
 <!-- CONTENT -->

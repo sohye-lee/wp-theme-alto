@@ -106,7 +106,8 @@ function alto_admin_init(){
 }
 add_action('admin_init', 'alto_admin_init');
 
-// Configurations
+
+// Theme Configurations
 function alto_config () {
     register_nav_menus( 
         array(
@@ -280,3 +281,24 @@ function render_site_options_sm ( $args ) {
 }
 
  
+
+// Footer Bottom Bar to Customizer
+function custom_footer_bottom_bar_customizer($wp_customize) {
+    $wp_customize->add_section('footer_bottom_bar_section', array(
+        'title'    => __('Footer Bottom Bar', 'alto'),
+        'priority' => 190,
+    ));
+
+    $wp_customize->add_setting('footer_bottom_bar_text', array(
+        'default'   => __('Copyright © 2024 Alto. All Rights Reserved.', 'alto'),
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+
+    $wp_customize->add_control('footer_bottom_bar_text_control', array(
+        'label'    => __('Footer Text', 'alto'),
+        'section'  => 'footer_bottom_bar_section',
+        'settings' => 'footer_bottom_bar_text',
+        'type'     => 'textarea',
+    ));
+}
+add_action('customize_register', 'custom_footer_bottom_bar_customizer');
